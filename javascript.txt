@@ -1,0 +1,44 @@
+variable is a container to store data
+var = var is a reassign and declare
+let = let is not a reassign only declare 
+const = const is a not a reassign and declare
+
+null = null value is indicates an empty value; it is essientially a placeholder that represents "nothing".
+undefined = undefind is a not a assigned a value
+function = a set of statements that performs a task or calculates a value,
+object = object is a standalone entity, with properties and type
+arry = array in JavaScript is a type of global object that is used to store data
+
+Operator's
+operators  = operators is a perform operations according to user requirements.
+1. Arithmetc operators =  + Additon , - subtraction , * multiplication , ** Exponentiation ,/ divison.
+2. Assignment operators =  += , -= , *= , /= , **= , <= , >=.
+3. Comparison operators = (== is check value) (=== is check datatype and value)(!= is check value)(!=== is check value and datatype) 
+4. ternary operators = (? is check condition)
+5. logical operators = (&& is check two value ) (|| is check only one value)   
+
+Loop's 
+loop = loops used in JavaScript to perform repeated tasks based on a condition.
+1.for loop =  loop repeats until a specified condition evaluates to false
+2.do..while loop = creates a loop that executes a specified statement until the test condition evaluates to false
+3.while loop = creates a loop that executes a specified statement as long as the test condition evaluates to true
+4.for..in loop = used to iterate over the properties of an object
+5.for..of loop = operates on the values sourced from an iterable one by one in sequential order.
+
+Break and continue statement
+break = The break statement "jumps out" of a loop.
+continue  = The continue statement "jumps over" one iteration in the loop.
+
+SetItem
+Set any item in local storage
+
+GetItem
+Any Item youcan Read
+
+.parse
+parses a string and returns a JavaScript object
+
+.push
+any store data in array to use push
+.some
+when the developer needs to check for a condition on an array and wants to know if at least one element fulfills that condition

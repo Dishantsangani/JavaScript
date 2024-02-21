@@ -1,0 +1,27 @@
+1- ES6 Features
+
+2-Arrays and Objects
+
+3-Higher-Order Functions
+
+4-Promises and Asynchronous Javascript
+
+5-Async / Await
+
+6-Callback Functions
+
+7-Modules and JSON
+
+8-Event Handling
+
+9-Arrow Functions
+
+10-Destructuring
+
+11-Array Methods
+
+12-Operators
+
+13-string methods
+
+14-Array methods - find,some,every,map,filter,reduce,includes

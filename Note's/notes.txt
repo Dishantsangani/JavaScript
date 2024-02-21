@@ -1,0 +1,82 @@
+1	ES6	Features
+✔2	Array and Objects	
+3	Higher -order- functions	
+4	promises and asynchoronous java script	
+5	Async / Await	
+✔6	Call back Functions	
+7	Modules and JSON	
+8	Event Handling	
+9	Arrow Funtions	
+10	Destructuring	
+✔11	Array Mehtod	
+✔12	Operators	
+✔13	String Methods	
+✔14	Array Methods - Find,Some,Every,Map,Filter,Reduce,includes	
+
+1.Es6 Features
+The let keyword
+The const keyword
+Arrow Functions
+The ... Operator
+For/of
+Map Objects
+Set Objects
+Classes
+Promises
+Symbol
+Default Parameters
+Function Rest Parameter
+String.includes()
+String.startsWith()
+String.endsWith()
+Array.from()
+Array keys()
+Array find()
+Array findIndex()
+New Math Methods
+New Number Properties
+New Number Methods
+New Global Methods
+Object entries
+JavaScript Modules
+
+2.Array and Object
+Array = "An array in JavaScript is a type of global object that is used to store data"
+Object = "An object is a collection of properties."
+
+3.Higher order Function
+
+9.array Mehtod
+Array length
+Array toString()
+Array pop()
+Array push()
+Array shift()
+Array unshift()
+Array join()
+Array delete()
+Array concat()
+Array flat()
+Array splice()
+Array slice()
+The methods are listed in the order they appear in this tutorial page
+
+13.string methods
+
+String length
+String slice()
+String substring()
+String substr()
+String replace()
+String replaceAll()
+String toUpperCase()
+String toLowerCase()
+String concat()
+String trim()
+String trimStart()
+String trimEnd()
+String padStart()
+String padEnd()
+String charAt()
+String charCodeAt()
+String split()

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Avg Find</title>
+    <style>
+      .form {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      input {
+        width: 300px;
+      }
+
+      .btn-submit {
+        padding: 10px;
+        float: left;
+      }
+
+      .btn-cancel {
+        padding: 10px;
+        float: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form">
+      <input type="text" id="English" placeholder="English" />
+      <input type="text" id="Hindi" placeholder="Hindi" />
+      <input type="text" id="Gujarati" placeholder="Gujarati" />
+      <input type="text" id="Maths" placeholder="Maths" />
+
+      <button class="btn-submit" onclick="vali();">Submit</button>
+    </div>
+
+    <center>
+      <table bgcolor="yellow" border="1" cellpadding="5">
+        <tr>
+          <td>total</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>get</td>
+          <td id="total"></td>
+        </tr>
+        <tr>
+          <td>Avg</td>
+          <td id="avg"></td>
+        </tr>
+      </table>
+    </center>
+
+    <script>
+      function vali() {
+        var a = parseInt(document.getElementById("English").value);
+        var b = parseInt(document.getElementById("Hindi").value);
+        var c = parseInt(document.getElementById("Gujarati").value);
+        var d = parseInt(document.getElementById("Maths").value);
+        if (a >= 100 || b >= 100 || c >= 100 || d >= 100) {
+          alert("Enter valid value");
+        } else {
+          var sum = a + b + c + d;
+          document.getElementById("total").innerHTML = sum;
+
+          var per = (sum / 400) * 100;
+          document.getElementById("avg").innerHTML = per;
+        }
+      }
+    </script>
+  </body>
+</html>

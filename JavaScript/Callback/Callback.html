@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback</title>
+  </head>
+  <body>
+    <h1>Callback</h1>
+    <script>
+      function call() {
+        console.log("Hello Everyone");
+      }
+      function back(Callback) {
+        console.log("My name is Dishant Sangani");
+        Callback(); // calling the callback function here`
+      }
+      back(call);
+    </script>
+  </body>
+</html>

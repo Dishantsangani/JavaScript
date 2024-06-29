@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api in React</title>
+    <style>
+      ul {
+        /* background-color: black; */
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="mylist"></ul>
+  </body>
+  <script>
+    const api = fetch("https://jsonplaceholder.typicode.com/todos/")
+      .then((res) => {
+        const data = res.json();
+        return data;
+      })
+      .then((result) => {
+        let ul = "";
+        result.forEach((element) => {
+          ul = ul + ` <li>${element.title}</li>`;
+        });
+        const mylist = document.querySelector(".mylist");
+        mylist.innerHTML = ul;
+        console.log(ul);
+      });
+    console.log(api, "api");
+  </script>
+</html>

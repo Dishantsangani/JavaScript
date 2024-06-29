@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Calling</title>
+  </head>
+  <body>
+    <script>
+      //   class car {
+      //     constructor() {
+      //       console.log("con");
+      //     }
+      //     proto() {
+      //       console.log("Prototype");
+      //     }
+      //     static sta() {
+      //       console.log("static Calling");
+      //     }
+      //   }
+      //   var obj = new car();
+      //   obj.proto();
+      //   car.sta();
+
+      // EX .2
+      class rr {
+        constructor() {
+          console.log("con");
+        }
+        proto() {
+          console.log("proto calling");
+        }
+        static stc() {
+          console.log("static calling");
+        }
+      }
+      let obj = new rr();
+      obj.proto();
+      rr.stc();
+    </script>
+  </body>
+</html>

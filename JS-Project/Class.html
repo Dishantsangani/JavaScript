@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addling Validation</title>
+    <style>
+      body {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      input {
+        padding: 10px;
+      }
+      .suss {
+        border: 5px solid green;
+        outline: none;
+      }
+      .fail {
+        border: 5px solid red;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="user"
+      name=""
+      placeholder="Username"
+      onkeyup="vali()"
+    />
+    <script>
+      function vali() {
+        var a = document.getElementById("user").value;
+        var b = /^[A-Za-z0-9@#$ ]{5,15}$/;
+        if (b.test(a)) {
+          document.querySelector("#user").classList = "suss";
+        } else {
+          document.querySelector("#user").classList = "fail";
+        }
+      }
+    </script>
+  </body>
+</html>

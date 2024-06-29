@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Button</title>
+    <style>
+      #error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <form onsubmit="return val()">
+        <span id="error"></span> <br />
+        <input type="text" placeholder="Enter UserName" id="user" />
+        <button class="btn">Submit</button>
+      </form>
+    </center>
+    <script>
+      function val() {
+        var use = document.getElementById("user").value;
+        var err = document.getElementById("error");
+        if (use.length < 5) {
+          err.textContent = "User Must FillMore Than 5 Digit";
+          return false;
+        } else {
+          err.textContent = "valid";
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

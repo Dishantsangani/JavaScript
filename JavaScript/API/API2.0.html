@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Fetching</title>
+  </head>
+  <body>
+    <h1>hello👋🏻</h1>
+    <script>
+      function todos(url) {
+        fetch(url)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+          });
+      }
+      todos("https://jsonplaceholder.typicode.com/todos");
+
+      function comments(url) {
+        fetch(url)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+          });
+      }
+      comments("https://jsonplaceholder.typicode.com/comments");
+
+      function albums(url) {
+        fetch(url)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+          });
+      }
+      albums("https://jsonplaceholder.typicode.com/albums");
+
+      function photos(url) {
+        fetch(url)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+          });
+      }
+      photos("https://jsonplaceholder.typicode.com/photos");
+
+      function posts(url) {
+        fetch(url)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+          });
+      }
+      posts("https://jsonplaceholder.typicode.com/posts");
+
+      function users(url) {
+        fetch(url)
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+          });
+      }
+      users("https://jsonplaceholder.typicode.com/users");
+    </script>
+  </body>
+</html>

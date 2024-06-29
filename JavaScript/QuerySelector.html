@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Query Selector</title>
+  </head>
+  <style>
+    p {
+      color: red;
+      border: 2px solid khaki;
+    }
+    .cname {
+      background: cyan;
+      color: black;
+    }
+  </style>
+  <body>
+    <h2>querySelector & QuerySelectorAll</h2>
+    <ul class="b" id="a">
+      <li class="a">sunday</li>
+      <li class="a">monday</li>
+      <li class="a">thuesday</li>
+    </ul>
+    <p class="dev" style="border: 3px solid red; border-radius: 20px">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem a
+      nostrum possimus eveniet mollitia aspernatur iusto facere cumque
+      distinctio nobis?
+    </p>
+    <h1 class="cname">Hello Everyone My Name is Dishant Sangani</h1>
+    <script>
+      var a = document.querySelector("ul");
+      console.log(a);
+
+      var b = document.querySelectorAll(".a")[0].innerHTML;
+      console.log(b);
+
+      //   Adding A New Class In Existing Class
+      var h1 = (document.querySelector(".dev").className = "cname");
+      // New Fetch Values
+      var dev = (document.querySelector(".dev").style.backgroundColor =
+        "black");
+      console.log(dev);
+      var border = document.querySelector("p").style.border;
+      console.log(border);
+    </script>
+  </body>
+</html>

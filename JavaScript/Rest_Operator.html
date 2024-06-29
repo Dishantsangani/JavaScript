@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Operator</title>
+  </head>
+  <body>
+    <script>
+      // Simple Rest Operator
+      //   function sum() {
+      //     let sum = 0;
+      //     for (let a in arguments) {
+      //       sum += arguments[a];
+      //     }
+      //     document.write(sum + "<br/>");
+      //   }
+      //   sum(30, 20, 10);
+
+      //   With Arguments Rest Operator's
+      //   function sum(name, surname, ...aru) {
+      //     document.write(`my name is ${name} and M   y Surname is ${surname}`);
+      //     let sum = 0;
+      //     for (let a in aru) {
+      //       sum += aru[a];
+      //     }
+      //     document.write(sum + "<br/>");
+      //   }
+      //   sum("dishant", "sangani", 86, 76, 8);
+
+      // Ex .1  
+      // function dv() {
+      //   let dv = 0;
+      //   for (let i in arguments) {
+      //     dv += arguments[i];
+      //   }
+      //   console.log(dv);
+      // }
+      // dv(20, 30);
+
+      // EX .2
+      function sum(name, ...args) {
+        console.log(arguments);
+        document.write(`Hello ${name}: `);
+        let sum = 0;
+        for (let i in args) {
+          sum += args[i];
+        }
+        console.log(sum + "<br/>");
+      }
+      sum("dev", "Sangani ", 10, 20);
+    </script>
+  </body>
+</html>

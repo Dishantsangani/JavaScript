@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events in Javascript</title>
+  </head>
+  <body onresize="greet()">   //onresize
+  <body onscroll="greet()">   //onscroll
+    <button onclick="greet()">On click</button>
+    <button ondblclick="greet()">Double click</button>
+    <button oncontextmenu="greet()">Right click</button>
+    <button onmouseenter="greet()">Mouse Hover</button>
+    <button onmouseout="greet()">Mouse Out</button>
+    <button onmousedown="greet()">Mouse Down</button>
+    <button onkeypress="greet()">Key Press</button>
+    <button onkeyup="greet()">Key UP</button>
+  </body>
+  <script>
+    function greet() {
+      document.write("Dishant sangani");
+    }
+  </script>
+</html>

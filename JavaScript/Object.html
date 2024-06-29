@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      let Car = {
+        name: "Mustang",
+        model: "gt",
+        engine: "v8",
+        year: 1969,
+        color: "red",
+      };
+      //   document.write(Car)
+      for (let val in Car) {
+        document.write(Car[val] + "<br>");
+      }
+    </script>
+  </body>
+</html>

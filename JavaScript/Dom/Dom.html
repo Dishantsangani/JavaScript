@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM(Document Object Model)</title>
+  </head>
+  <body>
+    <h1>All Dom model</h1>
+    <img src="" alt="" srcset="" />
+    <img src="" alt="" srcset="" />
+    <img src="" alt="" srcset="" />
+    <div id="a" class="b">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti
+      expedita quo laudantium placeat voluptatem qui sapiente similique
+      cupiditate libero!
+    </div>
+    <a href="www.google.com"></a>
+    <a href=""></a>
+    <form action="" method="get"></form>
+    <script>
+      const a = document.getElementById("a");
+      console.log(a, "using id");
+
+      const b = document.getElementsByClassName("b");
+      console.log(b, "Using Class Name");
+
+      const c = document.getElementsByTagName("div");
+      console.log(c, "TagName");
+
+      const d = document.images;
+      console.log(d, "Count Images");
+
+      const e = document.title;
+      console.log(e, "Show Title");
+
+      const f = document.body;
+      console.log(f, "Show Body");
+
+      const g = document.anchors;
+      console.log(g, "Show Anchors");
+
+      const h = document.links;
+      console.log(h, "Show Added Links");
+
+      const i = document.forms;
+      console.log(i, "Show Forms tag and Methods");
+
+      const j = document.URL;
+      console.log(j, "Show URL in Your Website's");
+
+      const k = document.doctype;
+      console.log(k, "Show Doctype");
+
+      const l = document.all;
+      console.log(l, "Show Alll Element");
+
+      const m = document.documentElement;
+      console.log(m, "Showing All Document Elements");
+
+      const n = document.head;
+      console.log(n, "Showing Head Tag");
+    </script>
+  </body>
+</html>

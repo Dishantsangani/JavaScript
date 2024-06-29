@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function with parameter's</title>
+  </head>
+  <body>
+    <script>
+      // Simple Function
+      //   function name() {
+      //     console.log("hello");
+      //   }
+      //   name();
+
+      //   Function
+      //   function sum(a = 1, b = 2) {
+      //     console.log(a + b);
+      //   }
+      //   sum();
+
+      // Functin With Multipale Calling
+      function name(fname = "dishant", lname = "sangani") {
+        document.write(
+          `Hello Everyone my name is <mark> ${fname}</mark>  and my sarname is <mark> ${lname}</mark><br>`
+        );
+      }
+      name();
+      name("deep");
+      name("kite", "patel");
+
+      // Return Function
+      // function Dev(a, b) {
+      //   return a + b;
+      // }
+      // var d = Dev(10, 20);
+      // console.log(d);
+    </script>
+  </body>
+</html>

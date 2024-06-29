@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom(Document object Model)</title>
+    <h1>Add class using Dom manuplation</h1>
+    <style>
+      .circle {
+        width: 200px;
+        height: 200px;
+        background: red;
+        color: white;
+        font-size: 22px;
+        line-height: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .hide {
+        display: none;
+        /* background: ; */
+      }
+      .wrapper {
+        display: flex;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="circle">1</div>
+      <div class="circle">2</div>
+      <div class="circle">3</div>
+      <div class="circle">4</div>
+      <div class="circle">5</div>
+    </div>
+    <script>
+      //   Single div hide
+      //   const circle = document.querySelector(".circle");
+      //   circle.addEventListener("click", function () {
+      //     circle.classList.add("hide");
+      //   });
+
+      // Multiple DIV HIDE
+      //   const circle = document.querySelectorAll(".circle");
+      //   circle.forEach((el) => {
+      //     el.addEventListener("click", function () {
+      //       el.classList.add("hide");
+      //     });
+      //   });
+    </script>
+  </body>
+</html>

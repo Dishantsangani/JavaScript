@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+  </head>
+  <p>Local storage , Set items</p>
+  <body>
+    <script>
+      let key = prompt("enter Key you want to set");
+      let value = prompt("enter Key you want to set");
+      localStorage.setItem(key, value);
+      console.log(`The Value at ${key} is ${localStorage.getItem(key)}`);
+
+      if (key == "red" || key == "blue") {
+        localStorage.removeItem(key);
+        console.log("key is removed");
+      }
+      if (key == 0) {
+        localStorage.clear();
+      }
+    </script>
+  </body>
+</html>

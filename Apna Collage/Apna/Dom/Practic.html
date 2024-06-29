@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Practic</title>
+  </head>
+  <style>
+    /* .box {
+      height: 100px;
+      width: 100px;
+      border: 2px solid black;
+      margin: 5px;
+      text-align: center;
+      background: aquamarine;
+      color: black;
+    } */
+    .content {
+      color: red;
+    }
+    .newclass {
+      background: green;
+    }
+  </style>
+  <body>
+    <!-- <p>
+      Q1 create a h2 heading element wth text - "Hello Javascript". Append "from
+      apna collage students to this using js"
+    </p>
+    <p>
+      Q2 create 3 divs with common class name - "box".access them & add some
+      unque text to each of them.
+    </p>
+    <p>
+      Q3.create a new button element. give it a text "click me" , background
+      color of red & text color of white. insert the button as the first element
+      inside the body tag
+    </p> -->
+    <!-- <p>Q4.Create a</p>
+    <p>
+      tag in html , give it a class & some styling. <br />
+      now create a new class in css and try to append this class to the
+    </p>
+    <p>
+      element. <br />
+      did you notice how you overwrite the class name when you add a new one?
+      solve this problem using classlist
+    </p> -->
+    <p class="content">i am a paragraph</p>
+    <!-- <h2>Hello JavaScript</h2>
+    <div class="box">First div</div>
+    <div class="box">Secound div</div>
+    <div class="box">Thried div</div> -->
+    <script>
+      // 1.Answer
+      //   let h2 = document.querySelector("h2");
+      //   console.dir(h2.innerText);
+      //   h2.innerText = h2.innerHTML + " from apna collage students";
+
+      //   Q2.Answer
+      // let divs = document.querySelectorAll(".box");
+      // let idx = 0;
+      // for (div of divs) {
+      //   div.innerText = `New Unique Value  ${idx}`;
+      //   idx++;
+      // }
+      // divs[0].innerText = "new unique value 1 ";
+      // divs[1].innerText = "new unique value 2 ";
+      // divs[2].innerText = "new unique value 3 ";
+
+      // Q3.Answer
+      // let newBTN = document.createElement("button");
+      // newBTN.innerText = "Click Me";
+
+      // newBTN.style.color = "white";
+      // newBTN.style.background = "red";
+      // newBTN.style.border = "3px solid black";
+      // newBTN.style.borderRadius = "20px";
+
+      // document.querySelector("body").prepend(newBTN);
+
+      // Q4.Answer
+      // let para = document.querySelector("p");
+      // para.getAttribute("class")
+      // para.setattribute("class", "newclass"); change  the classname of the element
+      // para.classList.add("newclass")  add class to the existing class name
+      // para.classList.remove("newclass")  remove class to the existing class name
+    </script>
+  </body>
+</html>

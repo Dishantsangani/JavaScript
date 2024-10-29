@@ -1,7 +1,11 @@
 function dev() {
-  console.log(ff);
-  console.log(dd);
   var ff = "dishant";
-  let dd = 27;
+  function main() {
+    const ff = "dev";
+    console.log("non", ff);
+  }
+  return main;
 }
-dev();
+let ab = dev();
+ab();
+// console.log("ab : ", ab);

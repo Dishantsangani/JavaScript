@@ -5,7 +5,6 @@
 // // Reject : Reject Means Promise Has Not Settled Successfully
 
 async function dev() {
-  // let x = await fetch("https://jsonplaceholder.typicode.com/todos/1");
   let x = await fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
     body: JSON.stringify({
@@ -28,17 +27,3 @@ async function main() {
   console.log("loading");
 }
 main();
-
-// async function postdata(url = "", data = {}) {
-//   const reponse = await fetch(url, {
-//     method: "POST",
-//     headers: {
-//       "Content Type": "application/json",
-//     },
-//     body: JSON.stringify(data),
-//   });
-//   return reponse.json();
-// }
-
-// postdata("", { answer: 42 }).then((data) => console.log(data));
-v 

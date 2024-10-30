@@ -48,3 +48,13 @@ let dev = {};
 if (Object.keys(dev).length === 0) {
   console.log("Empty");
 }
+
+// Destracuring
+const cource = {
+  name: "js hindi",
+  price: 999,
+  instructor: "Hitesh",
+};
+
+const { instructor } = cource;
+console.log(instructor);

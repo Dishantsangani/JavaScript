@@ -1,11 +1,5 @@
-function dev() {
-  var ff = "dishant";
-  function main() {
-    const ff = "dev";
-    console.log("non", ff);
-  }
-  return main;
+async function dev() {
+  let result = await fetch("https://jsonplaceholder.typicode.com/posts");
+  console.log(await result.json());
 }
-let ab = dev();
-ab();
-// console.log("ab : ", ab);
+dev();

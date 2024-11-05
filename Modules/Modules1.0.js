@@ -1,7 +1,9 @@
-// const { hello, ahello } = require("./Modules");
-import harry, { hello, ahello } from "./Modules2.0";
-hello();
-ahello("Shivani");
-ahello("Garima");
-ahello("Harry");
-ahello("Aish");
+const dev = () => {
+  console.log("Hello Dishant");
+};
+
+const dev1 = (name) => {
+  console.log("Hello", name);
+};
+
+module.exports = { dev, dev1 };

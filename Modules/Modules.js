@@ -1,9 +1,3 @@
-const hello = () => {
-  console.log("hello Dishant ");
-};
-module.exports = hello;
-
-const ahello = (name) => {
-  console.log("hello Dishant" + name);
-};
-module.exports = { hello, ahello };
+const { dev, dev1 } = require("./Modules1.0");
+dev();
+dev1("Dishant sangani");

@@ -1,22 +1,37 @@
-// const user = {
+// const person = {
 //   name: "Dishant",
-//   loginCount: 8,
-//   signedIn: true,
-
-//   getuser: function () {
-//     console.log("hello");
-//     console.log(this);
+//   age: 22,
+//   address: "Nikol",
+//   hoobie: function () {
+//     console.log("This is a Person 1");
 //   },
 // };
-// console.log(user.getuser());
+// console.log(person.hoobie());
 
-function user(username, loginCount, islogged) {
+// const person2 = {
+//   name: "Dishant",
+//   age: 22,
+//   address: "Nikol",
+//   hoobie: function () {
+//     console.log("This is a Person 1");
+//   },
+// };
+// console.log(person2.hoobie());
+
+// 2 Way
+
+function user(username, logincount, isloggedin) {
   this.username = username;
-  this.loginCount = loginCount;
-  this.islogged = islogged;
+  this.logincount = logincount;
+  this.isloggedin = isloggedin;
+  this.greeting = function () {
+    console.log(`Welcome ${this.username} `);
+  };
+
   return this;
 }
-const userone = user("Dishant", 27, true);
-const usertwo = user("dev", 56, true);
-console.log("userone: ", userone);
-console.log("userone: ", usertwo);
+const userOne = new user("Dishant", 7, true);
+const usertwo = new user("Dev", 27, false);
+
+console.log("userOne: ", userOne.constructor);
+console.log("usertwo: ", usertwo);
